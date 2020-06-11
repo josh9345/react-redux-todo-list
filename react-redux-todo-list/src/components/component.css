@@ -2,3 +2,12 @@
   cursor: pointer;
   user-select: none;
 }
+.addTodo-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+#todoList-container {
+  box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}

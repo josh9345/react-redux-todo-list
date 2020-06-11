@@ -5,7 +5,7 @@ import { addTodo } from "../actions";
 const AddTodo = ({ dispatch }) => {
   let input;
   return (
-    <div>
+    <div className="addTodo-container">
       <form
         onSubmit={(e) => {
           e.preventDefault();
