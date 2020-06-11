@@ -4,12 +4,14 @@ import Todo from "./Todo";
 
 const TodoList = ({ todos, toggleTodo }) => (
   <div className="card">
-    <div className="card-header">My List</div>
-    <ul className="list-group list-group-flush">
-      {todos.map((todo) => (
-        <Todo key={todo.id} {...todo} onCLick={() => toggleTodo(todo.id)} />
-      ))}
-    </ul>
+    <div className="card-header">
+      My List
+      <ul className="list-group list-group-flush">
+        {todos.map((todo) => (
+          <Todo key={todo.id} {...todo} onCLick={() => toggleTodo(todo.id)} />
+        ))}
+      </ul>
+    </div>
   </div>
 );
 

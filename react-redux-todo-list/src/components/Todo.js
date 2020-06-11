@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 const Todo = ({ onCLick, completed, text }) => {
   return (
     <li
+      id="list-item"
       className="list-group-item"
       onClick={onCLick}
       style={{
